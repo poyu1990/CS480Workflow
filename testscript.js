@@ -37,9 +37,6 @@ function insertUser(email,firstName,lastName,userType,password) {
 <<<<<<< HEAD
 function updateUser(email, firstName, lastName, userType, password)
 {
-=======
-function destroyUser(email, password){
->>>>>>> 391bbf675438bce91a741341bc8fec125292407c
   popup();
   Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
 
@@ -86,19 +83,31 @@ function updateUserEmail(email)
     },
     error:function(results) {
       alert("woop");
-=======
+    }
+  });
+}
+
+function destroyUser(email, password){
+  popup();
+  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
+
+  var TestObject = Parse.Object.extend("WorkflowUser");
+  var testObject = new TestObject();
+
+  var query = new Parse.Query(TestObject);
+
   testObject.destroy({
     success: function(testObject){
       alert(email + "was deleted.");
     }
     error: function(testObject){
       alert("User was not deleted.");
->>>>>>> 391bbf675438bce91a741341bc8fec125292407c
     }
   });
 }
 
-<<<<<<< HEAD
+
+
 function updateUserFirstName(email, firstName)
 {
   popup();
