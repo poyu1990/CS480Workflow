@@ -1,0 +1,181 @@
+[33mcommit b6fc4bb1feb77df3e8537f4f951c47a36c8fb470[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Sun May 31 23:35:49 2015 -0700
+
+    delete workflowinstance added
+
+[33mcommit 5be09c94e408b339f35d489c096e50e338038147[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Sun May 31 23:03:59 2015 -0700
+
+    update added
+
+[33mcommit ec5b8c398eedc99e3c3449cfe946b8c71f89313b[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Sun May 31 22:54:57 2015 -0700
+
+    update added
+
+[33mcommit 341a3c5344843fac3ee63a095fd1a025edc85a89[m
+Merge: c32811a 391bbf6
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Wed May 27 19:09:48 2015 -0700
+
+    Merge branch 'Database-Query' of https://github.com/richardcousart/CS480Workflow into richardcousart/Database-Query
+    test
+    Conflicts:
+    	index.html
+    	testscript.js
+
+[33mcommit c32811ad4bb39814794da05f47fe9dffe129e932[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Wed May 27 18:47:37 2015 -0700
+
+    testing
+
+[33mcommit 391bbf675438bce91a741341bc8fec125292407c[m
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Wed May 20 19:22:27 2015 -0700
+
+    insertUser change
+    
+    capitalization
+
+[33mcommit 890534a55b968c3ec4e1ad4072ade08ced0ac290[m
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Wed May 20 19:19:50 2015 -0700
+
+    Added Sarmen's update features
+    
+    updateUser
+    updateUserEmail
+    updateUserFirstName
+    updateUserPassword
+    updateUserLastName
+    updateUserType
+
+[33mcommit 97794845f96de39c622c953b514d5b215c502c79[m
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Wed May 20 18:59:25 2015 -0700
+
+    Added destroyUser and changed UserIn
+    
+    destroyUser(email, password) and
+    insertUser(email,firstName,lastName,userType,password)
+
+[33mcommit 1997493c505dbadc168d918188fca25c85f13d12[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Wed May 20 18:24:06 2015 -0700
+
+    added workflowinstancelog
+
+[33mcommit bf217d790ce4c16fcbe2342ef7b3d175fd4e4915[m
+Merge: 364a4cc ff3d59c
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Sun May 17 18:22:20 2015 -0700
+
+    Merge pull request #3 from richardcousart/master
+    
+    Merge pull request #1 from tomwang2011/master
+
+[33mcommit 364a4cc9ae5db7c764c845ddb80b66af7ca713a2[m
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Wed May 13 19:55:20 2015 -0700
+
+    Able to get Key onto Alert
+    
+    Need to fix JS -> Html return in index.html
+
+[33mcommit be16bb5bdb298c35429cfbc1d65674affe9c3d0f[m
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Wed May 13 19:41:18 2015 -0700
+
+    Testing again
+    
+    HTML is hard stuff
+
+[33mcommit af23c4f53c45a0bd3251b7bb26babd41898c074c[m
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Wed May 13 19:29:05 2015 -0700
+
+    Testing Push/Pull Buttons
+    
+    Testing
+
+[33mcommit d4e9a15d96626ce1dfa147c2b806b37dba158a1a[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Wed May 13 19:11:38 2015 -0700
+
+    Update testscript.js
+
+[33mcommit a9eef0167b55e5a92cc6562ae00b7ace7423e81d[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Wed May 13 19:10:13 2015 -0700
+
+    implemented if user already exits or not, need to clean it up a bit
+
+[33mcommit d4124b3f44eb66189603ab395131465b25d09af5[m
+Author: Sarmen <Khodjasarian@csupomona.edu>
+Date:   Wed May 13 18:53:20 2015 -0700
+
+    getUser gets the objectId from parse
+
+[33mcommit 5917bd92f30aa8130d796afc538bf2aa189abc59[m
+Merge: 8406e3d 1812dd9
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Fri May 8 09:01:33 2015 -0700
+
+    Merge pull request #2 from tomwang2011/master
+    
+    Test stuff
+
+[33mcommit 1812dd924543e7532fc9c5cc79c81dbc7c6fa37e[m
+Author: tom wang <tong.wang@liferay.com>
+Date:   Fri May 8 08:46:36 2015 -0700
+
+    updated test
+
+[33mcommit 753872cb7cf5422d1536c33234a8bc6a02e7d25c[m
+Author: tom wang <tong.wang@liferay.com>
+Date:   Thu May 7 16:50:22 2015 -0700
+
+    working query and return
+
+[33mcommit 599dd74ad8ccb03c311bbd711af172244700c825[m
+Author: tom wang <tong.wang@liferay.com>
+Date:   Thu May 7 16:40:54 2015 -0700
+
+    added jointjs stuff
+
+[33mcommit 2c75bfa2cab70f21bf46456a11c9426040aad813[m
+Author: tom wang <tong.wang@liferay.com>
+Date:   Thu May 7 16:10:10 2015 -0700
+
+    simplified
+
+[33mcommit 98ad1e02329698199862ede0d6669d448bb70be8[m
+Author: tom wang <tong.wang@liferay.com>
+Date:   Thu May 7 14:47:03 2015 -0700
+
+    Testing page
+
+[33mcommit ff3d59c82867f9d26b75a5c84c2d37a1f7dd5112[m
+Merge: 8406e3d 7499133
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Wed May 6 18:44:49 2015 -0700
+
+    Merge pull request #1 from tomwang2011/master
+    
+    PR sample
+
+[33mcommit 74991336dea08c6e835e8b668d2f1122f2028360[m
+Author: tom <tomwang2011@gmail.com>
+Date:   Wed May 6 18:42:40 2015 -0700
+
+    PR sample
+
+[33mcommit 8406e3dbcccf05b0ba67b357e89341a4ba7ba026[m
+Author: Richard Cousart <rcousart@cpp.edu>
+Date:   Thu May 7 01:30:50 2015 +0000
+
+    Initial commit
