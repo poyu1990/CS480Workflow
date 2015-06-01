@@ -34,7 +34,6 @@ function insertUser(email,firstName,lastName,userType,password) {
     });
 }
 
-<<<<<<< HEAD
 function updateUser(email, firstName, lastName, userType, password)
 {
   popup();
@@ -42,7 +41,6 @@ function updateUser(email, firstName, lastName, userType, password)
 
   var TestObject = Parse.Object.extend("WorkflowUser");
   var testObject = new TestObject();
-<<<<<<< HEAD
   var query = new Parse.Query(TestObject);
   query.equalTo("email", email);
     query.first({
@@ -87,6 +85,104 @@ function updateUserEmail(email)
   });
 }
 
+function updateUserFirstName(email, firstName)
+{
+  popup();
+  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
+
+  var TestObject = Parse.Object.extend("WorkflowUser");
+  var testObject = new TestObject();
+  var query = new Parse.Query(TestObject);
+  query.equalTo("email", email)
+    query.first({
+      success: function(results) {
+        results.save(null, {
+          success: function(results) {
+            results.set("Name", firstName);
+            results.save();
+          }
+        });  
+    },
+    error:function(results) {
+      alert("woop");
+    }
+  });
+}
+function updateUserLastName(email, lastName)
+{
+  popup();
+  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
+
+  var TestObject = Parse.Object.extend("WorkflowUser");
+  var testObject = new TestObject();
+  var query = new Parse.Query(TestObject);
+  query.equalTo("email", email)
+    query.first({
+      success: function(results) {
+        results.save(null, {
+          success: function(results) {
+            results.set("LastName", lastName);
+            results.save();
+          }
+        });  
+    },
+    error:function(results) {
+      alert("woop");
+    }
+  });
+}
+
+function updateUserPassword(email, password)
+{
+  popup();
+  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
+
+  var TestObject = Parse.Object.extend("WorkflowUser");
+  var testObject = new TestObject();
+  var query = new Parse.Query(TestObject);
+  query.equalTo("email", email);
+    query.first({
+      success: function(results) {
+        results.save(null, {
+          success: function(results) {
+            results.set("Password", password);
+            results.save();
+          }
+        });  
+    },
+    error:function(results) {
+      alert("woop");
+    }
+  });
+}
+
+function updateUserType(email, userType)
+{
+  popup();
+  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
+
+  var TestObject = Parse.Object.extend("WorkflowUser");
+  var testObject = new TestObject();
+  var query = new Parse.Query(TestObject);
+  query.equalTo("email", email);
+    query.first({
+      success: function(results) {
+        results.save(null, {
+          success: function(results) {
+            results.set("UserType", userType);
+            results.save();
+          }
+        });  
+    },
+    error:function(results) {
+      alert("woop");
+    }
+  });
+}
+
+function popup() {
+  alert("don't push me");
+}
 function destroyUser(email, password){
   popup();
   Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
@@ -106,245 +202,6 @@ function destroyUser(email, password){
   });
 }
 
-
-
-function updateUserFirstName(email, firstName)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email)
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("Name", firstName);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-}
-function updateUserLastName(email, lastName)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email)
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("LastName", lastName);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-}
-
-function updateUserPassword(email, password)
-=======
-function updateUser(email, firstName, lastName, userType, password)
->>>>>>> 391bbf675438bce91a741341bc8fec125292407c
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email);
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-<<<<<<< HEAD
-            results.set("Password", password);
-            results.save();
-          }
-        });  
-=======
-            updateUserEmail(email);
-            updateUserPassword(email, password);
-            updateUserType(email, userType);
-            updateUserFirstName(email, firstName);
-            updateUserLastName(email, lastName);
-            results.save();
-          }
-        });  
-      
->>>>>>> 391bbf675438bce91a741341bc8fec125292407c
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-<<<<<<< HEAD
-}
-
-function updateUserType(email, userType)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email);
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("UserType", userType);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-}
-
-function popup() {
-  alert("don't push me");
-=======
-function updateUserEmail(email)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email);
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("email", email);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
->>>>>>> 391bbf675438bce91a741341bc8fec125292407c
-}
-
-function updateUserFirstName(email, firstName)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email)
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("Name", firstName);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-}
-function updateUserLastName(email, lastName)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email)
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("LastName", lastName);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-}
-
-function updateUserPassword(email, password)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email);
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("Password", password);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-}
-
-function updateUserType(email, userType)
-{
-  popup();
-  Parse.initialize("ej29LXB9zHARKwcF5gHhkQ4SnJS7mGwWZ01qrZAa", "jTpvM9KVA9G9XteMyDD4nDcL6xNPVhg44zliTSrw");
-
-  var TestObject = Parse.Object.extend("WorkflowUser");
-  var testObject = new TestObject();
-  var query = new Parse.Query(TestObject);
-  query.equalTo("email", email);
-    query.first({
-      success: function(results) {
-        results.save(null, {
-          success: function(results) {
-            results.set("UserType", userType);
-            results.save();
-          }
-        });  
-    },
-    error:function(results) {
-      alert("woop");
-    }
-  });
-}
-
-function popup() {
-  alert("don't push me");
-}
 
 function getUser(email,password) {
   popup();
